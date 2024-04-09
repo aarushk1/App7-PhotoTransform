@@ -107,7 +107,13 @@
 
          
         var imageInfo = context.getImageData(0,0,600,500); //tells us the pixel data so that we can change the image to a different color
-        
+         //it goes through every pixel and then it changes the RG value of the term RBG to zero
+        for(let j=0; j<imageInfo.data.length; j+=4)
+         {
+           imageInfo.data[j] = 0;
+           imageInfo.data[j+1] = 0;
+         }
+         
            
           
           
