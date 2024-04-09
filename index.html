@@ -110,7 +110,7 @@
          //it goes through every pixel and then it changes the RG value of the term RBG to zero
         for(let j=0; j<imageInfo.data.length; j+=4)
          {
-           imageInfo.data[j] = 0;
+           imageInfo.data[j] = 0; //this line is used to change the color to zero for the RBG value so that it does not show up
            imageInfo.data[j+1] = 0;
          }
 
