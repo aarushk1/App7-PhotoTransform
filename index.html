@@ -113,7 +113,8 @@
            imageInfo.data[j] = 0;
            imageInfo.data[j+1] = 0;
          }
-         
+
+         bContext.putImageData(imageInfo,0,0); //modifies image so that every pixel is blue and thus the entire image is blue
            
           
           
